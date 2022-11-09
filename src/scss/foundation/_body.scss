@@ -1,0 +1,35 @@
+@use "../global" as g;
+
+html {
+	// font-size: 62.5%;
+}
+body {
+
+	//デフォルトでアンダーラインが設定されてしまうので打ち消す
+
+	a:where(:not(.wp-element-button)) {
+		text-decoration: none;
+	}
+}
+
+a {
+	color: currentColor;
+}
+
+#content {
+
+	p {
+		a {
+			color: var(--ark-color--link);
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+input[type=text], select, textarea {
+	min-height: 2.4rem;
+	border-radius: 0.3rem;
+}

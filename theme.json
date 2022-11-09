@@ -1,0 +1,81 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"duotone": [],
+			"gradients": [],
+			"palette": [
+				{
+					"slug": "original-green",
+					"color": "#3dbaba",
+					"name": "Original Green"
+				},
+				{
+					"slug": "original-lt-green",
+					"color": "#cfebeb",
+					"name": "Original Light Green"
+				},
+				{
+					"slug": "original-blue",
+					"color": "#43b6f0",
+					"name": "Original Blue"
+				},
+				{
+					"slug": "original-lt-blue",
+					"color": "#dff1fa",
+					"name": "Original Light Blue"
+				},
+				{
+					"slug": "original-dk-red",
+					"color": "#ba3d4e",
+					"name": "Original Dark Red"
+				},
+				{
+					"slug": "original-gray",
+					"color": "#f3f5f5",
+					"name": "Original Gray"
+				},
+				{
+					"slug": "original-orange",
+					"color": "#e95801",
+					"name": "Original Orange"
+				},
+				{
+					"slug": "original-bg-cream",
+					"color": "#f5f4ed",
+					"name": "Original Back Cream"
+				},
+				{
+					"slug": "original-footer",
+					"color": "#081212",
+					"name": "Original Black"
+				},
+				{
+					"slug": "original-white",
+					"color": "#ffffff",
+					"name": "Original White"
+				}
+			],
+			"custom" : false,
+			"customDuotone": false,
+			"customGradient": false
+		},
+		"typography": {
+			"dropCap": false,
+			"fontFamilies":  [
+				{
+					"fontFamily": "'Noto Sans JP', sans-serif",
+					"slug": "original-main-font",
+					"name": "Original Main Font"
+				},
+				{
+					"fontFamily": "'Zen Maru Gothic', sans-serif",
+					"slug": "original-heading-font",
+					"name": "Original Heading font"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,51 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.c-rky-exp-top-area {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70% auto;
+  background: var(--wp--preset--color--rky-bg-cream);
+}
+.c-rky-exp-top-area .wp-block-image {
+  height: 40vw;
+  margin-bottom: 0 !important;
+}
+.c-rky-exp-top-area .wp-block-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.c-rky-exp-top-area .wp-block-image figcaption {
+  display: none !important;
+}
+.c-rky-exp-top-area .c-rky-exp-title {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 2rem;
+  background: var(--wp--preset--color--white);
+}
+.c-rky-exp-top-area .c-rky-exp-title__eiji {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.c-rky-exp-top-area .c-rky-exp-title__name {
+  font-size: 2.4rem;
+  margin-top: 0;
+  font-family: var(--wp--preset--font-family--rky-heading-font);
+}
+.c-rky-exp-top-area__icon {
+  position: absolute;
+  width: 10%;
+  right: 3rem;
+  top: 4rem;
+}
+
+.l-content__body {
+  margin-top: 0 !important;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sample/sample",
+	"title": "施設情報タイトル",
+	"category": "sample",
+	"icon": "smiley",
+	"description": "",
+	"keywords": [ "", "" ],
+	"version": "0.1.0",
+	"textdomain": "sample",
+	"attributes": {
+		"eiji": {
+			"type": "string",
+			"source": "html",
+			"selector": ".c-rky-exp-title__eiji"
+		},
+		"name": {
+			"type": "string",
+			"source": "html",
+			"selector": ".c-rky-exp-title__name"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".c-rky-exp-title__text"
+		}
+	},
+	"usesContext": [ "groupId" ],
+	"editorScript": "file:./index.js",
+	"script": "",
+	"viewScript": "file:./build/view.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

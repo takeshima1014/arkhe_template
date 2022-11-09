@@ -1,0 +1,25 @@
+@use "global" as g;
+
+.u-only-sp, .u-only-pc, .u-hide-sp, .u-hide-pc {
+	position: relative;
+	border: 1px dotted #ff0000;
+	padding-top: calc( 0.5rem + var(--wp--preset--font-size--xsmall) );
+	padding-bottom: 0.5rem;
+	&::before {
+		position: absolute;
+		width: 100%;
+		font-size: var(--wp--preset--font-size--xsmall);
+		font-weight: 400;
+		top:0;
+		left:0;
+		color: #ff0000;
+	}
+}
+
+.u-only-pc,	.u-hide-sp {
+	content: '[SP時に非表示]';
+}
+.u-only-sp, .u-hide-pc {
+	content: '[PC時に非表示]';
+}
+

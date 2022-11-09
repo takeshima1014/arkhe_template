@@ -1,0 +1,16 @@
+@use "../settings" as g;
+
+//メディアクエリ
+
+@mixin mq($breakpoint) {
+	@media #{map-get(g.$breakpoints, $breakpoint)} {
+			@content;
+	}
+}
+
+@mixin image-set ( $image, $extens, $setting ) {
+	background: url(#{$image}.#{$extens}) #{$setting};
+	.webp & {
+		background: url(#{$image}.webp) #{$setting};
+	}
+}

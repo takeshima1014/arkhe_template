@@ -1,0 +1,10 @@
+@use "../global" as g;
+
+// @include g.outputUtilityClass( g.$u-fontSize, 'fs', 'font-size');
+// @include g.outputUtilityClass( g.$u-fontWeight, 'fw', 'font-weight');
+// @include g.outputUtilityClass( g.$u-lineHeight, 'lh', 'line-height');
+// @include g.outputUtilityClass( g.$u-letterSpace, 'ls', 'letter-spacing');
+
+.u-kerning {
+	font-feature-settings: "palt";
+}

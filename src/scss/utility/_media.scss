@@ -1,0 +1,13 @@
+@use "../global" as g;
+
+@include g.mq(tab) {
+	.u-hide-tab {
+		display: none;
+	}
+}
+
+@include g.mq(pc) {
+	.u-only-tab {
+		display: none;
+	}
+}

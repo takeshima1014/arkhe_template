@@ -1,0 +1,74 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.c-rky-exp-top-area {
+	position: relative;
+	display: grid;
+	grid-template-columns: 70% auto;
+	background: var(--wp--preset--color--rky-bg-cream);
+
+	@media (max-width: 1000px) {
+		grid-template-columns: 80% auto;
+		grid-template-rows: auto auto;
+	}
+
+	.wp-block-image {
+		height: 40vw;
+		margin-bottom: 0 !important;
+
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+		figcaption {
+			display: none !important;
+		}
+
+	}
+	.c-rky-exp-title {
+		position: absolute;
+		right: 2rem;
+		bottom: 2rem;
+		min-width: 500px;
+		max-width: 640px;
+		padding: 2rem;
+		background: var(--wp--preset--color--white);
+		@media (max-width: 1000px) {
+			position: initial;
+			min-width: initial;
+			max-width: initial;
+			grid-row: 2/3;
+			grid-column: 1/3;
+			border: 5px solid var(--wp--preset--color--rky-bg-cream);
+		}
+
+		&__eiji {
+			font-size: 0.85rem;
+			font-weight: bold;
+		}
+		&__name {
+				font-size: 2.4rem;
+				margin-top: 0;
+				font-family: var(--wp--preset--font-family--rky-heading-font);
+				@media (max-width: 1000px) {
+					font-size: 2rem;
+				}
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		width: 10%;
+		right: 3rem;
+		top: 4rem;
+		@media (max-width: 1000px) {
+			right: 0.5rem;
+			top: 1rem;
+			width: 18%;
+		}
+	}
+}
